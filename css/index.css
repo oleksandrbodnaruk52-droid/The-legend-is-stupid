@@ -1,0 +1,189 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:#0b0f1a;
+color:white;
+}
+
+/* HEADER */
+
+.header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 80px;
+background:#0b0f1a;
+}
+
+.logo{
+font-weight:700;
+font-size:22px;
+}
+
+nav ul{
+display:flex;
+gap:30px;
+list-style:none;
+color:#bbb;
+}
+
+nav li:hover{
+color:white;
+cursor:pointer;
+}
+
+.shop-btn{
+background:#ff3d3d;
+border:none;
+padding:10px 20px;
+color:white;
+border-radius:6px;
+cursor:pointer;
+}
+
+/* HERO */
+
+.hero{
+height:85vh;
+display:flex;
+align-items:center;
+padding:0 80px;
+
+background:
+linear-gradient(to right,#0b0f1a 40%,transparent),
+url("https://images.unsplash.com/photo-1511379938547-c1f69419868d");
+
+background-size:cover;
+background-position:center;
+}
+
+.hero-content{
+max-width:600px;
+}
+
+.tag{
+color:#ff3d3d;
+margin-bottom:10px;
+font-weight:600;
+}
+
+.hero h1{
+font-size:60px;
+line-height:1.1;
+}
+
+.hero span{
+color:#2f7bff;
+}
+
+.description{
+margin-top:20px;
+color:#ccc;
+line-height:1.6;
+}
+
+.buttons{
+margin-top:30px;
+display:flex;
+gap:20px;
+}
+
+.btn-primary{
+background:#ff3d3d;
+border:none;
+padding:14px 26px;
+border-radius:6px;
+color:white;
+cursor:pointer;
+}
+
+.btn-secondary{
+background:transparent;
+border:1px solid #666;
+padding:14px 26px;
+border-radius:6px;
+color:white;
+cursor:pointer;
+}
+
+/* CATEGORIES */
+
+.categories{
+padding:80px;
+text-align:center;
+}
+
+.categories h2{
+font-size:36px;
+margin-bottom:10px;
+}
+
+.categories p{
+color:#aaa;
+margin-bottom:50px;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:25px;
+}
+
+.card{
+height:220px;
+border-radius:12px;
+display:flex;
+flex-direction:column;
+justify-content:flex-end;
+padding:25px;
+text-align:left;
+
+background-size:cover;
+background-position:center;
+
+transition:0.3s;
+}
+
+.card:hover{
+transform:scale(1.05);
+}
+
+.card h3{
+font-size:22px;
+}
+
+.card p{
+font-size:14px;
+color:#ddd;
+}
+
+/* images */
+
+.guitar{
+background-image:url("https://images.unsplash.com/photo-1510915361894-db8b60106cb1");
+}
+
+.piano{
+background-image:url("https://images.unsplash.com/photo-1513883049090-d0b7439799bf");
+}
+
+.drums{
+background-image:url("https://images.unsplash.com/photo-1519895609939-d2a6494c3f6c");
+}
+
+.dj{
+background-image:url("https://images.unsplash.com/photo-1511379938547-c1f69419868d");
+}
+
+.studio{
+background-image:url("https://images.unsplash.com/photo-1519389950473-47ba0277781c");
+}
+
+.accessories{
+background-image:url("https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4");
+}
