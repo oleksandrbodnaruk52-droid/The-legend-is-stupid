@@ -56,7 +56,7 @@ padding:0 80px;
 
 background:
 linear-gradient(to right,#0b0f1a 40%,transparent),
-url("https://images.unsplash.com/photo-1511379938547-c1f69419868d");
+url("../imeges/photo_2026-03-14_17-24-15.jpg");
 
 background-size:cover;
 background-position:center;
@@ -165,7 +165,7 @@ color:#ddd;
 /* images */
 
 .guitar{
-background-image:url("https://images.unsplash.com/photo-1510915361894-db8b60106cb1");
+background-image:url("../imeges/photo_2026-03-14_17-24-15.jpg");
 }
 
 .piano{
