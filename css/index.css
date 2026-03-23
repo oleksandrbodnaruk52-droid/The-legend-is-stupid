@@ -101,12 +101,7 @@ line-height:1.6;
 margin-left: -300px ;
 }
 
-.buttons{
-margin-top:30px;
-display:flex;
-gap:20px;
-margin-left: -300px ;
-}
+
 
 .btn-primary{
 background:#ff3d3d;
@@ -117,14 +112,7 @@ color:white;
 cursor:pointer;
 }
 
-.btn-secondary{
-background:transparent;
-border:1px solid #666;
-padding:14px 26px;
-border-radius:6px;
-color:white;
-cursor:pointer;
-}
+
 
 /* CATEGORIES */
 
@@ -180,25 +168,25 @@ color:#ddd;
 /* images */
 
 .guitar{
-background-image:url("../imeges/photo_2026-03-14_17-24-15.jpg"); 
+background-image:url("../imeges/photo55_2026-03-23_18-04-13.jpg"); 
 }
 
 .piano{
-background-image:url("https://images.unsplash.com/photo-1513883049090-d0b7439799bf");
+background-image:url("/imeges/photoмузика_2026-03-23_18-03-28.jpg");
 }
 
 .drums{
-background-image:url("https://images.unsplash.com/photo-1519895609939-d2a6494c3f6c");
+background-image:url("/imeges/photo1_2026-03-23_18-14-54.jpg");
 }
 
 .dj{
-background-image:url("https://images.unsplash.com/photo-1511379938547-c1f69419868d");
+background-image:url("/imeges/photo2_2026-03-23_18-25-43.jpg");
 }
 
 .studio{
-background-image:url("https://images.unsplash.com/photo-1519389950473-47ba0277781c");
+background-image:url("/imeges/photo6_2026-03-23_18-40-12.jpg");
 }
 
 .accessories{
-background-image:url("https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4");
+background-image:url("/imeges/photo7_2026-03-23_18-53-33.jpg");
 }

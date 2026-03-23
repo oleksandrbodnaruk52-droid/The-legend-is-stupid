@@ -1,0 +1,191 @@
+/* Глобальні налаштування */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #0c0c0c; /* Дуже темна тема, як на скриншоті */
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+/* Навігація — збережено стиль оригіналу */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+    background: transparent;
+    border-bottom: 1px solid #333; /* Тонка межа */
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    color: #ccc;
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #ff3131; /* Червоний акцент, як на скриншоті */
+}
+
+a {
+    color:#ddd;
+    text-decoration:none;
+}
+
+.btn-top:hover {
+    background: #cc2525;
+}
+
+/* Головний контент */
+.main-content {
+    padding: 60px 5% 100px;
+}
+
+.music-section {
+    text-align: center;
+}
+
+.page-title {
+    font-size: 48px;
+    margin-bottom: 10px;
+    letter-spacing: -1px;
+}
+
+.page-subtitle {
+    font-size: 18px;
+    color: #bbb;
+    margin-bottom: 60px;
+}
+
+/* Сітка карток треків (автоматично 2 або 3 в ряд) */
+.songs-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+    gap: 25px;
+}
+
+/* Картка пісні (темний "куб") */
+.song-card {
+    background: #1a1a1a; /* Трохи світліше за фон */
+    padding: 40px;
+    border-radius: 10px;
+    border: 1px solid #333;
+    transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.song-card:hover {
+    border-color: #ff3131; /* Підсвітка червоним при наведенні */
+    transform: translateY(-8px); /* Легке підняття */
+    box-shadow: 0 10px 30px rgba(255, 49, 49, 0.15);
+}
+
+/* Інфо в картці */
+.song-info {
+    margin-bottom: 30px;
+}
+
+.song-info h3 {
+    font-size: 26px;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.genre {
+    color: #ff3131; /* Червоний акцент для жанру */
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+}
+
+.year {
+    color: #777;
+    font-size: 12px;
+}
+
+/* Кнопки в картці */
+.song-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.action-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    padding: 12px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.action-link small {
+    font-weight: normal;
+    font-size: 11px;
+    opacity: 0.8;
+}
+
+/* Кнопка скачування (біла, як оригінал) */
+.get-btn {
+    background: #ffffff;
+    color: #0c0c0c;
+}
+
+.get-btn:hover {
+    background: #ff3131;
+    color: white;
+}
+
+/* Кнопка підтримки (аутлайн червоного кольору) */
+.support-btn {
+    background: transparent;
+    border: 1px solid #ff3131;
+    color: #ff3131;
+}
+
+.support-btn:hover {
+    background: rgba(255, 49, 49, 0.1);
+}
+
+/* Адаптивність для мобільних */
+@media (max-width: 600px) {
+    .main-content {
+        padding: 40px 3%;
+    }
+    .songs-grid {
+        grid-template-columns: 1fr; /* 1 в ряд на телефоні */
+    }
+    .song-card {
+        padding: 30px;
+    }
+    .page-title {
+        font-size: 32px;
+    }
+}
