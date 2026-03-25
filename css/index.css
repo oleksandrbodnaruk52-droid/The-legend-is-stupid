@@ -2,23 +2,41 @@
 margin:0;
 padding:0;
 box-sizing:border-box;
-font-family:'Poppins',sans-serif;
+font-family:sans-serif;
 }
 
 body{
-background:#0b0f1a;
+background:#0c0c0c;
 color:white;
+line-height: 1.6;
 }
 
 /* HEADER */
 
 .header{
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:20px 80px;
-background:#0b0f1a;
-font-family:initial;
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 20px 40px;
+background: transparent;
+border-bottom: 1px solid #333; /* Тонка межа */
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    color: #ccc;
+    text-decoration: none;
+    font-size: 17px;
+    transition: 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #ff3131; /* Червоний акцент, як на скриншоті */
 }
 
 a {
@@ -27,15 +45,28 @@ a {
 }
 
 .logo{
-font-weight:700;
-font-size:22px;
+font-size: 24px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    display: inline-block; /* Це обов'язково для тега <a> */
+    display: inline-block;
+    transform: rotate(0deg); /* Початковий стан: нахил вліво */
+    transition: 0.5s;          /* Час анімації (0.3 секунди) */
+    text-decoration: none;     /* Прибрати підкреслення, якщо треба */
+    color: #ffffff;            /* Твій колір */
+}
+.logo:hover {
+    transform: rotate(-2deg);  /* Стан при наведенні: вирівнюється в нуль */
+    color: #d80000;           /* Можна ще й колір міняти при наведенні */
 }
 
+
+
 nav ul{
-display:flex;
-gap:30px;
-list-style:none;
-color:#bbb;
+list-style: none;
+    display: flex;
+    gap: 30px;
 }
 
 nav li:hover{
@@ -62,7 +93,7 @@ padding:0 80px;
 
 
 background:
-linear-gradient(to right,#0b0f1a 25%,transparent),
+linear-gradient(to right,#0c0c0c 25%,transparent),
 url("../imeges/IMG_20260318_171021.jpg");
 max-width: 90%;
 margin-left: 300px ;
@@ -189,4 +220,20 @@ background-image:url("/imeges/photo6_2026-03-23_18-40-12.jpg");
 
 .accessories{
 background-image:url("/imeges/photo7_2026-03-23_18-53-33.jpg");
+}
+
+/* Адаптивність для мобільних */
+@media (max-width: 600px) {
+    .main-content {
+        padding: 40px 3%;
+    }
+    .songs-grid {
+        grid-template-columns: 1fr; /* 1 в ряд на телефоні */
+    }
+    .song-card {
+        padding: 30px;
+    }
+    .page-title {
+        font-size: 32px;
+    }
 }
