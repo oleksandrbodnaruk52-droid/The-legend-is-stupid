@@ -6,19 +6,19 @@
 }
 
 body {
-    background-color: #0c0c0c; /* Дуже темна тема, як на скриншоті */
+    background-color: #0c0c0c; 
     color: white;
     line-height: 1.6;
 }
 
-/* Навігація — збережено стиль оригіналу */
+
 .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px 40px;
     background: transparent;
-    border-bottom: 1px solid #333; /* Тонка межа */
+    border-bottom: 1px solid #333; 
 }
 
 .logo {
